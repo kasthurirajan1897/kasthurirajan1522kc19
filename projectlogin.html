@@ -1,0 +1,51 @@
+<html>
+<head>
+<title> AYUSH</title>
+
+<style>
+#new-div {
+background-color:yellow;
+border:5px solid black;
+width:400px;
+height:200px;
+margin-left:200px;
+padding:50px;
+}
+</style>
+<script>
+function fun() {
+var a=document.getElementById("uname").value;
+var b=document.getElementById("pass").value;
+if(a=="" || b="") {
+alert("please fill username and password");
+}
+if(a=="5" || b="5") {
+alert("it does not exsist 5 characters");
+}
+}
+</script>
+</head>
+<body>
+<form method="post" action="ayuircoimbatore.html">
+<center>
+<div id="new-div">
+<h1>AYUSH Admin Login </h1>
+<table>
+<tr>
+<td><label>username</label></td>
+<td><input type="text" id=uname></td>
+</tr>
+<tr>
+<td><label>password</label></td>
+<td><input type="password" id=pass></td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td><button onclick="fun()">submit</button></td>
+<td><input type="reset" value="Reset"></td>
+</tr>
+</table>
+</div>
+</body>
+</html>
